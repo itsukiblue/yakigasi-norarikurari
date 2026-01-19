@@ -240,18 +240,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // carousel
     // ======================
     function initScrollCarousel() {
-        const scrollContainer = document.querySelector('.carousel');
-        const scrollSpeed = 0.5;
-        scrollContainer.innerHTML += scrollContainer.innerHTML;
-        let originalWidth = scrollContainer.scrollWidth / 2;
-        function autoScroll() {
-            scrollContainer.scrollLeft += scrollSpeed;
-            if (scrollContainer.scrollLeft >= originalWidth) {
-                scrollContainer.scrollLeft -= originalWidth;
+        const container = document.querySelector('.carousel');
+        const content = container.querySelector('.carousel__inner');
+        let x = 0;
+        const speed = 0.5;
+        const width = content.scrollWidth / 2;
+        function loop() {
+            x -= speed;
+            if (Math.abs(x) >= width) {
+                x = 0;
             }
-            requestAnimationFrame(autoScroll);
+            content.style.transform = `translateX(${x}px)`;
+            requestAnimationFrame(loop);
         }
-        autoScroll();
+        loop();
     }
 
     // ======================
