@@ -172,9 +172,13 @@ carousel
     overflow: hidden;
     width: 100%;
     margin-top: 30px;
+}
+
+.carousel__inner {
     display: flex;
     gap: 20px;
     white-space: nowrap;
+    will-change: transform;
 }
 
 .carousel__item {
