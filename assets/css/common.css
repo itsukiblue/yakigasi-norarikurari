@@ -202,7 +202,7 @@ img {
     display: block;
     width: 120%;
     height: auto;
-    margin-bottom: -10px;
+    margin: 0 auto -10px;
     overflow: hidden;
     animation: waveFloat-down 6s ease-in-out infinite;
 }
@@ -225,7 +225,7 @@ img {
     display: block;
     width: 120%;
     height: auto;
-    margin-top: -10px;
+    margin: -10px auto 0;
     overflow: hidden;
     animation: waveFloat-up 6s ease-in-out infinite;
 }
