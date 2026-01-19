@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="焼き菓子のらりくらりによく寄せられるご質問をまとめました。店舗、商品、注文についてご案内しています。">
+
+    <!-- ogp -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="よくある質問｜焼き菓子のらりくらり">
+    <meta property="og:description" content="焼き菓子のらりくらりによく寄せられるご質問をまとめました。店舗、商品、注文についてご案内しています。">
+    <meta property="og:url" content="">
+    <meta property="image" content="">
+    <meta property="og:site_name" content="焼き菓子のらりくらり">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="assets/images/icon16x16.png">
+    <link rel="icon" type="image/png" href="assets/images/icon32x32.png">
+    <link rel="icon" href="assets/images/favicon.ico">
+    <title>よくある質問｜焼き菓子のらりくらり</title>
+
+    <!-- web fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Noto+Sans:wdth,wght@62.5..100,100..900&family=Noto+Serif+JP:wght@200..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&family=Zen+Kaku+Gothic+Antique:wght@300;400;500;700;900&family=Zen+Maru+Gothic:wght@300;400;500;700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- css -->
+    <link rel="stylesheet" href="assets/css/destyle.css">
+    <link rel="stylesheet" href="assets/css/common.css">
+    <link rel="stylesheet" href="assets/css/faq.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">
+            <!-- header -->
+            <div class="header__top">
+                <h1 class="logo">
+                    <a href="index.html"><img src="assets/images/logo.png" alt="焼き菓子のらりくらり"></a>
+                </h1>
+                <div class="header__group">
+                    <a class="btn form__btn" href="contact.html">注文・お問い合わせ<img src="assets/images/letter.svg"
+                            alt=""></a>
+                    <div class="btn__group">
+                        <a class="header__btn menu__btn" href=""><img src="assets/images/menu.svg" alt=""></a>
+                        <a class="header__btn instagram__btn" href="#"><img src="assets/images/instagram.svg"
+                                alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <!-- nav -->
+            <nav class="nav">
+                <div class="nav__header">
+                    <p class="nav__logo">
+                        <a href="#"><img src="assets/images/logo.png" alt="焼き菓子のらりくらり"></a>
+                    </p>
+                    <div class="btn__group">
+                        <a class="header__btn close__btn" href=""><img src="assets/images/close.svg" alt=""></a>
+                        <a class="header__btn instagram__btn" href=""><img src="assets/images/instagram.svg"
+                                alt="#"></a>
+                    </div>
+                </div>
+                <div class="nav__content">
+                    <ul class="nav__list nav__list--header">
+                        <li class="nav__item nav__item--header">
+                            <a href="index.html">
+                                <span class="nav__item--icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--header">
+                            <a href="products.html">
+                                <span class="nav__item--icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                商品紹介
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--header">
+                            <a href="order-gift.html">
+                                <span class="nav__item--icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                オーダー・ギフト
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--header">
+                            <a href="information.html">
+                                <span class="nav__item--icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                店舗情報
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--header">
+                            <a href="faq.html">
+                                <span class="nav__item--icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                よくある質問
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn form__btn form__btn--nav" href="contact.html">注文・お問い合わせ<img src="assets/images/letter.svg"
+                        alt=""></a>
+            </nav>
+        </header>
+
+        <main class="main">
+            <article class="article">
+                <section class="faq">
+                    <h2 class="faq__title fadein-up">よくある質問</h2>
+                    <!-- scroll btn -->
+                    <div class="scroll fadein-up">
+                        <a class="scroll__btn scroll__btn--baked" href="#faq-visit">
+                            <span class="scroll__btn--arrow"><img src="assets/images/arrow_down.svg" alt=""></span>
+                            ご来店について
+                        </a>
+                        <a class="scroll__btn scroll__btn--baked" href="#faq-products">
+                            <span class="scroll__btn--arrow"><img src="assets/images/arrow_down.svg" alt=""></span>
+                            商品・お菓子について
+                        </a>
+                        <a class="scroll__btn scroll__btn--cake" href="#faq-order">
+                            <span class="scroll__btn--arrow"><img src="assets/images/arrow_down.svg" alt=""></span>
+                            ご予約・ご注文について
+                        </a>
+                    </div>
+
+                    <section class="faq__group">
+                        <section class="faq__category" id="faq-visit">
+                            <h3 class="category__title fadein-up"><img src="assets/images/dog_brown.svg" alt="">ご来店について
+                            </h3>
+                            <p class="category__txt fadein-up">
+                                ご来店前によくいただくご質問をまとめました。<br>はじめての方も、どうぞ安心してお越しください。</p>
+                            <div class="faq__content">
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">営業日・営業時間は？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            Instagramと店頭でお知らせしています。仕込みやイベント出店等で変わることがありますので、ご来店前に最新の情報をご確認ください。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">駐車場はありますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            店舗前に2台分の駐車スペースをご用意しています。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">イートインはできますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            申し訳ありませんが、イートインスペースはございません。<br>お持ち帰りのみのご対応となります。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">毎日同じ商品が並びますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            日によってラインナップは変わります。季節の素材や店主の気まぐれで、少しずつ違うお菓子が並びます。<br>当日の商品はInstagramでお知らせしています。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">支払い方法は？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            現金のみでのお支払いとなっております。あらかじめご了承ください。
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+
+                        <section class="faq__category" id="faq-products">
+                            <h3 class="category__title fadein-up"><img src="assets/images/dog_brown.svg"
+                                    alt="">商品・お菓子について</h3>
+                            <p class="category__txt fadein-up">
+                                素材や味わい、保存方法など、<br>お菓子についてよくいただくご質問です。</p>
+                            <div class="faq__content">
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">ギフト用のラッピングはしてもらえますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            はい、簡単なギフトラッピングをご用意しています。<br>内容や数量によってはお時間をいただく場合がありますので、事前のご相談をおすすめしています。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">アレルギー表示はありますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            店内にて主要アレルギーの表示を行っています。また、商品包装にも記載しております。ご不安な点がございましたら、お気軽にお声がけください。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">子どもでも食べられますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            甘さ控えめで、やさしい味わいのお菓子が多く、お子さまにも人気です。<br>アレルギー等がある場合は、事前にご確認ください。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">賞味期限はどれくらいですか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            商品によって異なりますが、焼き菓子は2〜5日ほどが目安です。詳しくは商品包装に記載しています。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">保存方法を教えてください</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            常温保存可能な焼き菓子が多いですが、夏場や生菓子・ケーキは冷蔵保存をお願いします。直射日光や高温多湿を避けて保管してください。
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+
+                        <section class="faq__category" id="faq-order">
+                            <h3 class="category__title fadein-up"><img src="assets/images/dog_brown.svg"
+                                    alt="">ご予約・ご注文について
+                            </h3>
+                            <p class="category__txt fadein-up">
+                                オーダーケーキやギフト、<br>ご予約に関するご案内です。</p>
+                            <div class="faq__content">
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">取り置きはできますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            原則、当日のみ可能です。当日の営業時間内にお受け取り可能な方に限り、お電話にて承っております。<br>※数に限りがあるため、ご希望に添えない場合もございます。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">オーダーケーキは何日前までに頼めますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            原則、1週間前までにお電話または予約フォームよりご注文ください。それ以降についてはご相談ください。<br>※材料の都合により、お受けできない場合がございます。<br>お電話やDMは、時間帯によってはお取りできない場合や、返信までお時間をいただくことがあります。あらかじめご了承ください。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">ギフトボックスの予約は必要ですか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            原則、10日前までにお電話または予約フォームにてご予約をお願いします。料金や内容を簡単にお決めいただいた上でご相談ください。<br>※材料の都合により、お受けできない場合がございます。
+                                        </p>
+                                    </div>
+                                </details>
+                                <details class="faq__item fadein-up">
+                                    <summary class="faq__question">
+                                        <span class="faq__txt">通販や配送はしていますか？</span>
+                                        <span class="faq__img">
+                                            <img class="faq__img--plus" src="assets/images/plus.svg" alt="">
+                                            <img class="faq__img--minus" src="assets/images/minus.svg" alt="">
+                                        </span>
+                                    </summary>
+                                    <div class="faq__answer">
+                                        <p class="faq__txt">
+                                            申し訳ありませんが、通販・配送は行っておりません。店頭でのお渡しのみとなります。
+                                        </p>
+                                    </div>
+                                </details>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </article>
+        </main>
+
+        <img class="wave-top" src="assets/images/wave__footer.svg" alt="">
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__section">
+                <h2 class="footer__title">
+                    焼き菓子のらりくらり
+                </h2>
+                <div class="footer__info">
+                    <div class="footer__list">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="焼き菓子のらりくらり"></a>
+                        <div class="footer__item">
+                            <p class="footer__txt">〒989-3216</p>
+                            <p class="footer__txt">仙台市青葉区高野原1-20-12</p>
+                        </div>
+                        <div class="footer__item">
+                            <p class="footer__txt">金・土・日　11：00〜17：00</p>
+                            <p class="footer__txt--small">（イベント出展等で不定休あり）</p>
+                        </div>
+                    </div>
+                    <div class="cta__group">
+                        <!-- cta -->
+                        <div class="cta footer__cta">
+                            <p class="cta__txt">詳しくはInstagramへ</p>
+                            <a class="btn cta__btn" href="#">Instagramを見る<img src="assets/images/arrow.svg" alt=""></a>
+                        </div>
+                        <!-- cta -->
+                        <div class="cta footer__cta">
+                            <p class="cta__txt">ご注文・お問い合わせはこちら</p>
+                            <a class="btn cta__btn" href="contact.html">注文・お問い合わせ<img src="assets/images/arrow.svg"
+                                    alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <!-- footer nav -->
+                <nav class="footer__nav">
+                    <ul class="nav__list nav__list--footer">
+                        <li class="nav__item nav__item--footer">
+                            <a href="index.html">
+                                <span class="nav__item--icon footer__icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                HOME
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--footer">
+                            <a href="products.html">
+                                <span class="nav__item--icon footer__icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                商品紹介
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--footer">
+                            <a href="order-gift.html">
+                                <span class="nav__item--icon footer__icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                オーダー・ギフト
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--footer">
+                            <a href="information.html">
+                                <span class="nav__item--icon footer__icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                店舗情報
+                            </a>
+                        </li>
+                        <li class="nav__item nav__item--footer">
+                            <a href="faq.html">
+                                <span class="nav__item--icon footer__icon">
+                                    <img src="assets/images/dog_white.svg" alt="">
+                                    <img class="icon__hover" src="assets/images/dog_yellow.svg" alt="">
+                                </span>
+                                よくある質問
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <p class="copy"><small>&copy; 2025 焼き菓子のらりくらり</small></p>
+        </footer>
+    </div>
+    <script src="assets/js/faq.js"></script>
+</body>
+
+</html>
