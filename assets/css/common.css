@@ -201,6 +201,8 @@ img {
 .wave-top {
     display: block;
     width: 100%;
+    height: auto;
+    margin-bottom: -10px;
     animation: waveFloat-down 6s ease-in-out infinite;
 }
 
@@ -221,6 +223,8 @@ img {
 .wave-bottom {
     display: block;
     width: 100%;
+    height: auto;
+    margin-top: -10px;
     animation: waveFloat-up 6s ease-in-out infinite;
 }
 
