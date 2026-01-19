@@ -43,25 +43,6 @@ img {
     display: flex;
     color: var(--white);
     background-color: var(--skyblue);
-    max-width: 280px;
-    height: 70px;
-    font-size: 2.0rem;
-    font-weight: 700;
-    line-height: 1;
-    border-radius: 90px;
-    text-align: center;
-    padding: 0 30px;
-    position: relative;
-    transition: transform 0.15s ease,
-        box-shadow 0.25s ease,
-        background-color 0.25s ease;
-    cursor: pointer;
-}
-
-.btn {
-    display: flex;
-    color: var(--white);
-    background-color: var(--skyblue);
     width: 280px;
     height: 70px;
     font-size: 2.0rem;
@@ -95,6 +76,12 @@ img {
 
 .btn:hover {
     transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    background-color: #3FA8B8;
+}
+
+.btn:active {
+    transform: translateY(4px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
     background-color: #3FA8B8;
 }
