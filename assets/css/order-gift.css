@@ -1,0 +1,245 @@
+@charset "UTF-8";
+
+/* =====================
+order-gift
+===================== */
+.order-gift {
+    margin: 0 4.2% 30px;
+}
+
+.order-gift__title {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 3.2rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.order-gift__txt {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 30px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.scroll__btn {
+    display: flex;
+    align-items: center;
+    font-size: 2.0rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.scroll__btn--arrow {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    position: relative;
+}
+
+.scroll__btn--arrow img {
+    display: block;
+    width: 14px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* =====================
+order-gift group
+===================== */
+.order-gift__group {
+    scroll-margin-top: 150px;
+    background-color: var(--white);
+    padding: 36px 6.4%;
+    margin-top: 60px;
+    border-radius: 20px;
+}
+
+.group__title {
+    display: flex;
+    justify-content: center;
+}
+
+.group__title--label {
+    color: var(--white);
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 1;
+    background-color: var(--orange);
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 4px 16px;
+}
+
+.group__title img {
+    display: inline-block;
+    width: 32px;
+    height: 32px;
+    margin-left: 6px;
+}
+
+.group__txt {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 20px;
+}
+
+.group__img {
+    aspect-ratio: 4 / 3;
+    margin: 20px auto 0;
+    position: relative;
+    overflow: hidden;
+}
+
+.group__img--fade {
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1.2s ease;
+}
+
+/* img animation */
+.group__img--fade.active {
+    opacity: 1;
+}
+
+.order-gift__item {
+    margin-top: 20px;
+}
+
+.item__term {
+    font-size: 1.4rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.item__term img {
+    width: 21px;
+    height: 21px;
+    display: inline-block;
+    margin-right: 6px;
+}
+
+.item__desc {
+    font-size: 1.4rem;
+    margin-top: 14px;
+}
+
+.item__desc--main {
+    font-weight: 700;
+}
+
+.item__desc--small {
+    font-size: 1.2rem;
+}
+
+
+@media screen and (min-width: 769px) {
+
+    /* =====================
+    order-gift
+    ===================== */
+    .order-gift {
+        margin: 0 4.2%;
+    }
+
+    .order-gift__title {
+        margin-top: 180px;
+    }
+
+    .order-gift__txt {
+        font-size: 1.8rem;
+        margin-top: 40px;
+    }
+
+    .scroll {
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin-top: 40px;
+    }
+
+    /* =====================
+    order-gift group
+    ===================== */
+    .order-gift__group {
+        scroll-margin-top: 180px;
+        max-width: 1160px;
+        padding: 40px 30px;
+        margin: 80px auto 0;
+    }
+
+    .group__txt {
+        font-size: 1.8rem;
+    }
+
+    .group__content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .group__img {
+        width: 100%;
+        max-width: 500px;
+        display: block;
+        margin: 0;
+    }
+
+    .order-gift__item {
+        display: flex;
+        align-items: flex-start;
+        margin-top: 30px;
+    }
+
+    .order-gift__item:first-child {
+        margin-top: 0;
+    }
+
+    .item__term {
+        font-size: 2.4rem;
+        width: 200px;
+    }
+
+    .item__term img {
+        width: 36px;
+        height: 36px;
+    }
+
+    .item__desc {
+        font-size: 1.8rem;
+        margin-top: 18px;
+    }
+
+    .item__desc--small {
+        font-size: 1.4rem;
+    }
+
+    .order-gift__item .item__desc:first-of-type {
+        margin-top: 0;
+    }
+}
