@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             loading.classList.add('hidden');
 
             startBackground();
+            startBgAnimations();
             startMainAnimations();
             startFadeIn();
             initSwipers();
@@ -28,20 +29,23 @@ document.addEventListener('DOMContentLoaded', () => {
             .forEach(item => item.classList.add('active'));
     }
 
+    function startBgAnimations() {
+        const bgItems = document.querySelectorAll('.bg__item');
+        setTimeout(() => {
+            bgItems.forEach(item => {
+                item.classList.add('show');
+            });
+        }, 800);
+    }
+
     // =================================
     // main illust
     // =================================
     function startMainAnimations() {
-        const bgItems = document.querySelectorAll('.bg__slide');
-        const hero = document.querySelector('.hero__fade');
-        bgItems.forEach((item, index) => {
-            setTimeout(() => {
-                item.classList.add('show');
-            }, index * 120);
-        });
+        const hero = document.querySelector('.hero__group');
         setTimeout(() => {
             hero.classList.add('show');
-        }, bgItems.length * 120 + 400);
+        }, 2400);
     }
 
     // ===========================
