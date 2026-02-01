@@ -120,209 +120,206 @@
         </header>
 
         <main class="main">
-            <article class="article">
-                <section class="contact">
-                    <h2 class="contact__title fadein-up">注文・お問い合わせ</h2>
-                    <p class="contact__txt fadein-up">お祝いや贈りものにおすすめの<br>オーダーケーキやギフトボックスです。</p>
-                    <!-- form -->
-                    <form class="form" action="thanks.html" method="post">
-                        <fieldset class="form__list form__common">
-                            <legend class="form__title">お客様情報</legend>
-                            <div class="form__item">
-                                <label class="form__category" for="name">
-                                    お名前
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <input type="text" name="name" id="name" placeholder="例）山田　太郎" required>
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="email">
-                                    メールアドレス
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <input type="email" name="email" id="email" placeholder="例）norakura@gmail.com" required>
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="tel">
-                                    電話番号
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <input type="tel" name="tel" id="tel" placeholder="例）xxx-xxxx-xxxx" required>
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="form__section">
-                                    お問い合わせ区分
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <select name="form__section" id="form__section" required>
-                                    <option value="">選択してください</option>
-                                    <option value="order">オーダーケーキの注文</option>
-                                    <option value="gift">ギフトボックスの注文</option>
-                                    <option value="other">その他お問い合わせ</option>
-                                </select>
-                            </div>
-                        </fieldset>
-                        <!-- order-cake -->
-                        <fieldset class="form__list form__order">
-                            <legend class="form__title">オーダーケーキの注文</legend>
-                            <fieldset class="form__item">
-                                <legend class="form__category">
-                                    ケーキの大きさ
-                                    <span class="form__required">必須</span>
-                                </legend>
-                                <div class="form__radio">
-                                    <label class="form__label"><input type="radio" name="size" value="5">5号</label>
-                                    <label class="form__label"><input type="radio" name="size" value="6">6号</label>
-                                </div>
-                            </fieldset>
-                            <div class="form__item">
-                                <label class="form__category" for="order__date">
-                                    お渡しご希望日
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <input type="date" name="order__date" id="order__date">
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="cake__type">
-                                    種類
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <select name="cake__type" id="cake__type">
-                                    <option value="">選択してください</option>
-                                    <option value="cream">生クリーム</option>
-                                    <option value="cheese">チーズケーキ</option>
-                                    <option value="tart">タルト</option>
-                                    <option value="gateau">ガトーショコラ</option>
-                                    <option value="chocolate">チョコクリーム</option>
-                                </select>
-                            </div>
-                            <fieldset class="form__item">
-                                <legend class="form__category">
-                                    メッセージプレート
-                                    <span class="form__required">必須</span>
-                                </legend>
-                                <div class="form__radio">
-                                    <label class="form__label"><input type="radio" name="plate" value="yes">あり</label>
-                                    <label class="form__label"><input type="radio" name="plate" value="no">なし</label>
-                                </div>
-                                <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
-                                <textarea name="plate__txt" placeholder="例）お誕生日おめでとう！"></textarea>
-                            </fieldset>
-                            <fieldset class="form__item">
-                                <legend class="form__category">
-                                    アレルギー
-                                    <span class="form__required">必須</span>
-                                </legend>
-                                <small
-                                    class="form__note">当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</small>
-                                <div class="form__radio">
-                                    <label class="form__label"><input type="radio" name="cake__allergy"
-                                            value="yes">あり</label>
-                                    <label class="form__label"><input type="radio" name="cake__allergy"
-                                            value="no">なし</label>
-                                </div>
-                                <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
-                                <textarea name="cake__allergy__txt" placeholder="例）メロン、いちご"></textarea>
-                            </fieldset>
-                            <div class="form__item">
-                                <label class="form__category" for="comment__order">備考欄</label>
-                                <textarea class="comment" name="comment__order" id="comment__order"
-                                    placeholder="伝えておきたいことがありましたら、ご記入ください。"></textarea>
-                            </div>
-                        </fieldset>
-                        <!-- gift-box -->
-                        <fieldset class="form__list form__gift">
-                            <legend class="form__title">ギフトボックスの注文</legend>
-                            <div class="form__item">
-                                <label class="form__category" for="budget">
-                                    ご予算（1個あたり）
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <div class="form__number">
-                                    <input type="number" name="budget" id="budget" min="500" step="500"
-                                        placeholder="500">
-                                    <span class="form__unit">円</span>
-                                </div>
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="quantity">
-                                    個数
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <div class="form__number">
-                                    <input type="number" name="quantity" id="quantity" min="1" step="1" placeholder="1">
-                                    <span class="form__unit">個</span>
-                                </div>
-                            </div>
-                            <div class="form__item">
-                                <label class="form__category" for="gift__date">
-                                    お渡しご希望日
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <input type="date" name="gift__date" id="gift__date">
-                            </div>
-                            <fieldset class="form__item">
-                                <legend class="form__category">中身のご希望</legend>
-                                <small class="form__note">内容にご希望があれば記入してください。</small>
-                                <textarea name="request" placeholder="例）スマイルクッキーを入れてください"></textarea>
-                            </fieldset>
-                            <fieldset class="form__item">
-                                <legend class="form__category">
-                                    アレルギー
-                                    <span class="form__required">必須</span>
-                                </legend>
-                                <small
-                                    class="form__note">当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</small>
-                                <div class="form__radio">
-                                    <label class="form__label"><input type="radio" name="gift__allergy"
-                                            value="yes">あり</label>
-                                    <label class="form__label"><input type="radio" name="gift__allergy"
-                                            value="no">なし</label>
-                                </div>
-                                <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
-                                <textarea name="gift__allergy__txt" placeholder="例）メロン、いちご"></textarea>
-                            </fieldset>
-                            <div class="form__item">
-                                <label class="form__category" for="comment__gift">備考欄</label>
-                                <textarea class="comment" name="comment__gift" id="comment__gift"
-                                    placeholder="伝えておきたいことがありましたら、ご記入ください。"></textarea>
-                            </div>
-                        </fieldset>
-                        <!-- other -->
-                        <fieldset class="form__list form__other">
-                            <legend class="form__title">その他お問い合わせ</legend>
-
-                            <div class="form__item">
-                                <label class="form__category" for="comment__other">
-                                    お問い合わせ内容
-                                    <span class="form__required">必須</span>
-                                </label>
-                                <textarea class="comment" name="comment__other" id="comment__other"
-                                    placeholder="ご自由にご記入ください"></textarea>
-                            </div>
-                        </fieldset>
-                        <!-- agreement -->
-                        <fieldset class="form__list form__agreement">
-                            <legend class="agreement__title">ご確認事項</legend>
-                            <div class="agreement__content">
-                                <p class="agreement__txt">
-                                    当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</p>
-                                <p class="agreement__txt">変更は《5日前まで》にお電話でご連絡ください。制作開始後の変更・キャンセルは承れません。</p>
-                                <p class="agreement__txt">商品は《店頭受取のみ》となります。配送は行っておりません。</p>
-                                <p class="agreement__txt">返信は《◯日以内》にお送りします。受信設定のご確認をお願いします。</p>
-                            </div>
-                            <label class="agreement__label"><input type="checkbox" name="agree"
-                                    required>上記の内容を理解しました</label>
-                        </fieldset>
-                        <div class="form__action">
-                            <button class="btn submit__btn" type="submit">送信する</button>
+            <section class="contact">
+                <h2 class="contact__title fadein-up">注文・お問い合わせ</h2>
+                <p class="contact__txt fadein-up">お祝いや贈りものにおすすめの<br>オーダーケーキやギフトボックスです。</p>
+                <!-- form -->
+                <form class="form" action="thanks.html" method="post">
+                    <fieldset class="form__list form__common">
+                        <legend class="form__title">お客様情報</legend>
+                        <div class="form__item">
+                            <label class="form__category" for="name">
+                                お名前
+                                <span class="form__required">必須</span>
+                            </label>
+                            <input type="text" name="name" id="name" placeholder="例）山田　太郎" required>
                         </div>
-                    </form>
-                </section>
-            </article>
+                        <div class="form__item">
+                            <label class="form__category" for="email">
+                                メールアドレス
+                                <span class="form__required">必須</span>
+                            </label>
+                            <input type="email" name="email" id="email" placeholder="例）norakura@gmail.com" required>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__category" for="tel">
+                                電話番号
+                                <span class="form__required">必須</span>
+                            </label>
+                            <input type="tel" name="tel" id="tel" placeholder="例）xxx-xxxx-xxxx" required>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__category" for="form__section">
+                                お問い合わせ区分
+                                <span class="form__required">必須</span>
+                            </label>
+                            <select name="form__section" id="form__section" required>
+                                <option value="">選択してください</option>
+                                <option value="order">オーダーケーキの注文</option>
+                                <option value="gift">ギフトボックスの注文</option>
+                                <option value="other">その他お問い合わせ</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <!-- order-cake -->
+                    <fieldset class="form__list form__order">
+                        <legend class="form__title">オーダーケーキの注文</legend>
+                        <fieldset class="form__item">
+                            <legend class="form__category">
+                                ケーキの大きさ
+                                <span class="form__required">必須</span>
+                            </legend>
+                            <div class="form__radio">
+                                <label class="form__label"><input type="radio" name="size" value="5">5号</label>
+                                <label class="form__label"><input type="radio" name="size" value="6">6号</label>
+                            </div>
+                        </fieldset>
+                        <div class="form__item">
+                            <label class="form__category" for="order__date">
+                                お渡しご希望日
+                                <span class="form__required">必須</span>
+                            </label>
+                            <input type="date" name="order__date" id="order__date">
+                        </div>
+                        <div class="form__item">
+                            <label class="form__category" for="cake__type">
+                                種類
+                                <span class="form__required">必須</span>
+                            </label>
+                            <select name="cake__type" id="cake__type">
+                                <option value="">選択してください</option>
+                                <option value="cream">生クリーム</option>
+                                <option value="cheese">チーズケーキ</option>
+                                <option value="tart">タルト</option>
+                                <option value="gateau">ガトーショコラ</option>
+                                <option value="chocolate">チョコクリーム</option>
+                            </select>
+                        </div>
+                        <fieldset class="form__item">
+                            <legend class="form__category">
+                                メッセージプレート
+                                <span class="form__required">必須</span>
+                            </legend>
+                            <div class="form__radio">
+                                <label class="form__label"><input type="radio" name="plate" value="yes">あり</label>
+                                <label class="form__label"><input type="radio" name="plate" value="no">なし</label>
+                            </div>
+                            <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
+                            <textarea name="plate__txt" placeholder="例）お誕生日おめでとう！"></textarea>
+                        </fieldset>
+                        <fieldset class="form__item">
+                            <legend class="form__category">
+                                アレルギー
+                                <span class="form__required">必須</span>
+                            </legend>
+                            <small
+                                class="form__note">当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</small>
+                            <div class="form__radio">
+                                <label class="form__label"><input type="radio" name="cake__allergy"
+                                        value="yes">あり</label>
+                                <label class="form__label"><input type="radio" name="cake__allergy"
+                                        value="no">なし</label>
+                            </div>
+                            <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
+                            <textarea name="cake__allergy__txt" placeholder="例）メロン、いちご"></textarea>
+                        </fieldset>
+                        <div class="form__item">
+                            <label class="form__category" for="comment__order">備考欄</label>
+                            <textarea class="comment" name="comment__order" id="comment__order"
+                                placeholder="伝えておきたいことがありましたら、ご記入ください。"></textarea>
+                        </div>
+                    </fieldset>
+                    <!-- gift-box -->
+                    <fieldset class="form__list form__gift">
+                        <legend class="form__title">ギフトボックスの注文</legend>
+                        <div class="form__item">
+                            <label class="form__category" for="budget">
+                                ご予算（1個あたり）
+                                <span class="form__required">必須</span>
+                            </label>
+                            <div class="form__number">
+                                <input type="number" name="budget" id="budget" min="500" step="500" placeholder="500">
+                                <span class="form__unit">円</span>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__category" for="quantity">
+                                個数
+                                <span class="form__required">必須</span>
+                            </label>
+                            <div class="form__number">
+                                <input type="number" name="quantity" id="quantity" min="1" step="1" placeholder="1">
+                                <span class="form__unit">個</span>
+                            </div>
+                        </div>
+                        <div class="form__item">
+                            <label class="form__category" for="gift__date">
+                                お渡しご希望日
+                                <span class="form__required">必須</span>
+                            </label>
+                            <input type="date" name="gift__date" id="gift__date">
+                        </div>
+                        <fieldset class="form__item">
+                            <legend class="form__category">中身のご希望</legend>
+                            <small class="form__note">内容にご希望があれば記入してください。</small>
+                            <textarea name="request" placeholder="例）スマイルクッキーを入れてください"></textarea>
+                        </fieldset>
+                        <fieldset class="form__item">
+                            <legend class="form__category">
+                                アレルギー
+                                <span class="form__required">必須</span>
+                            </legend>
+                            <small
+                                class="form__note">当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</small>
+                            <div class="form__radio">
+                                <label class="form__label"><input type="radio" name="gift__allergy"
+                                        value="yes">あり</label>
+                                <label class="form__label"><input type="radio" name="gift__allergy"
+                                        value="no">なし</label>
+                            </div>
+                            <small class="form__note">【あり】の場合はご記入ください。（20文字以内）</small>
+                            <textarea name="gift__allergy__txt" placeholder="例）メロン、いちご"></textarea>
+                        </fieldset>
+                        <div class="form__item">
+                            <label class="form__category" for="comment__gift">備考欄</label>
+                            <textarea class="comment" name="comment__gift" id="comment__gift"
+                                placeholder="伝えておきたいことがありましたら、ご記入ください。"></textarea>
+                        </div>
+                    </fieldset>
+                    <!-- other -->
+                    <fieldset class="form__list form__other">
+                        <legend class="form__title">その他お問い合わせ</legend>
+
+                        <div class="form__item">
+                            <label class="form__category" for="comment__other">
+                                お問い合わせ内容
+                                <span class="form__required">必須</span>
+                            </label>
+                            <textarea class="comment" name="comment__other" id="comment__other"
+                                placeholder="ご自由にご記入ください"></textarea>
+                        </div>
+                    </fieldset>
+                    <!-- agreement -->
+                    <fieldset class="form__list form__agreement">
+                        <legend class="agreement__title">ご確認事項</legend>
+                        <div class="agreement__content">
+                            <p class="agreement__txt">
+                                当店のお菓子は小麦・卵・乳製品を使用しています。また、同一厨房内でナッツ類を使用しています。完全なアレルギー対応はできません。ご了承ください。</p>
+                            <p class="agreement__txt">変更は《5日前まで》にお電話でご連絡ください。制作開始後の変更・キャンセルは承れません。</p>
+                            <p class="agreement__txt">商品は《店頭受取のみ》となります。配送は行っておりません。</p>
+                            <p class="agreement__txt">返信は《◯日以内》にお送りします。受信設定のご確認をお願いします。</p>
+                        </div>
+                        <label class="agreement__label"><input type="checkbox" name="agree"
+                                required>上記の内容を理解しました</label>
+                    </fieldset>
+                    <div class="form__action">
+                        <button class="btn submit__btn" type="submit">送信する</button>
+                    </div>
+                </form>
+            </section>
         </main>
 
-        <div class="wave__top wave__footer"></div>
+        <div class="wave__top"></div>
 
         <!-- footer -->
         <footer class="footer">
