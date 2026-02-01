@@ -139,25 +139,6 @@ img {
 }
 
 /* wave */
-.wave01 {
-    background-image: url(../images/wave01.png);
-}
-
-.wave02 {
-    background-image: url(../images/wave02.png);
-}
-
-.wave03 {
-    background-image: url(../images/wave03.png);
-}
-
-.wave04 {
-    background-image: url(../images/wave04.png);
-}
-
-.wave__footer {
-    background-image: url(../images/wave__footer.png);
-}
 
 .wave__top {
     width: 100%;
@@ -165,9 +146,10 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 130% 100%;
-    will-change: transform;
     animation: wave__top--float 6s ease-in-out infinite;
     margin-bottom: -10px;
+
+    background-image: url(../images/wave_top.png);
 }
 
 @keyframes wave__top--float {
@@ -190,9 +172,10 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: 130% 100%;
-    will-change: transform;
     animation: wave__bottom--float 6s ease-in-out infinite;
     margin-top: -10px;
+
+    background-image: url(../images/wave_bottom.png);
 }
 
 @keyframes wave__bottom--float {
